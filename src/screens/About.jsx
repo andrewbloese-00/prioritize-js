@@ -23,7 +23,7 @@ const About = () => {
    <section className='right_align'>
     <div className='text_block'>
      <h3>How does it work?</h3>
-     <p>All you need to do is add tasks to your todo list and prioritize will calculate its priority based on its deadline, and time to complete. Learn more about how to use prioritize <Link to='/help'>here</Link></p>
+     <p>All you need to do is add tasks to your todo list and prioritize will calculate its priority based on its deadline, and time to complete. Learn more about how to use prioritize <Link to='/help'>here</Link>. For more on how prioritize works, check out the <a target='_blank' rel='noopener noreferer' href='https://github.com/brokegti/prioritize-js'>github</a> page!</p>
     </div>
     <div className='img__wrapper'>
      <img src={img2} alt="featured"/>

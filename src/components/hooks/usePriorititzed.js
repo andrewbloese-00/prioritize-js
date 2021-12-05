@@ -1,4 +1,5 @@
 
+import { seed } from '../../assets/data/tasks';
 import Week from '../../Classes/Week'
 import  { taskSorter } from './useSort';
 
@@ -45,7 +46,7 @@ function getWeekEnd(weekStart){
 const usePriorititzed = () => {
  //if user has no saved tasks return empty array
  if(!localStorage.getItem('tasks'))
-  return []
+    seed();
  //otherwise fill the sorter array with the tasks in localstorage
  else{
   let sorter = JSON.parse(localStorage.getItem('tasks'))
