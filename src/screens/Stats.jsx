@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useState , useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import usePriorititzed from '../components/hooks/usePriorititzed'
 import '../css/stats.css'
@@ -18,7 +18,19 @@ const Stats = () => {
   return (calc).toFixed(0) + "%"
  }
 
+ const [sundayComplete, setSundayComplete] = useState(completedOn[0])
+ const [mondayComplete, setMondayComplete] = useState(completedOn[1])
+ const [tuesdayComplete, setTuesdayComplete] = useState(completedOn[2])
+ const [wednesdayComplete, setWednesdayComplete] = useState(completedOn[3])
+ const [thursComplete, setComplete] = useState(completedOn[4])
+ const [fridayComplete, setFridayComplete] = useState(completedOn[5])
+ const [saturdayComplete, setSaturdayComplete] = useState(completedOn[6])
+
+
+
  
+
+
 
 
 
@@ -46,7 +58,7 @@ const Stats = () => {
 
         <div className='box' id='statbox3'> 
           <h2>Average Completion Time</h2>
-          <p>{tasks.avgTTC} hours </p>
+          <p>{tasks.avgTTC.toFixed(1)} hours </p>
         </div>
       </div>
 
@@ -60,41 +72,47 @@ const Stats = () => {
           <td>Total</td>
           <td>Percent Completion</td>
         </thead>
-        <tbody> 
+        <tr> 
+          <td>Sunday</td>
+          <td>{sundayComplete}</td>
+          <td>{totalOn[0]}</td>
+          <td>{perc(sundayComplete, totalOn[1])}</td>
+        </tr>
+        <tr> 
           <td>Monday</td>
-          <td>{completedOn[1]}</td>
+          <td>{mondayComplete}</td>
           <td>{totalOn[1]}</td>
-          <td>{perc(completedOn[1], totalOn[1])}</td>
-        </tbody>
-        <tbody> 
+          <td>{perc(mondayComplete, totalOn[1])}</td>
+        </tr>
+        <tr> 
           <td>Tuesday</td>
-          <td>{completedOn[1]}</td>
-          <td>{totalOn[1]}</td>
-          <td>{perc(completedOn[2], totalOn[2])}</td>
-        </tbody>
+          <td>{tuesdayComplete}</td>
+          <td>{totalOn[2]}</td>
+          <td>{perc(tuesdayComplete, totalOn[2])}</td>
+        </tr>
         <tbody> 
           <td>Wednesday</td>
-          <td>{completedOn[3]}</td>
+          <td>{wednesdayComplete}</td>
           <td>{totalOn[3]}</td>
-          <td>{perc(completedOn[3], totalOn[3])}</td>
+          <td>{perc(wednesdayComplete, totalOn[3])}</td>
         </tbody>
-        <tbody> 
+        <tr> 
           <td>Thursday</td>
-          <td>{completedOn[4]}</td>
+          <td>{thursComplete}</td>
           <td>{totalOn[4]}</td>
-          <td>{perc(completedOn[4], totalOn[4])}</td>
-        </tbody>
-        <tbody> 
+          <td>{perc(thursComplete, totalOn[4])}</td>
+        </tr>
+        <tr> 
           <td>Friday</td>
-          <td>{completedOn[5]}</td>
+          <td>{fridayComplete}</td>
           <td>{totalOn[5]}</td>
-          <td>{perc(completedOn[5], totalOn[5])}</td>
-        </tbody>
+          <td>{perc(fridayComplete, totalOn[5])}</td>
+        </tr>
         <tbody> 
           <td>Saturday</td>
-          <td>{completedOn[6]}</td>
+          <td>{saturdayComplete}</td>
           <td>{totalOn[6]}</td>
-          <td>{perc(completedOn[6], totalOn[6])}</td>
+          <td>{perc(saturdayComplete, totalOn[6])}</td>
         </tbody>
      
         

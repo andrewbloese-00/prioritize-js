@@ -176,6 +176,6 @@ const seedTasks =
 
  export function seed(){
   if(!localStorage.getItem('tasks')){
-   localStorage.setItem('tasks', JSON.stringify(seedTasks))
+   localStorage.setItem('tasks', JSON.stringify(seedTasks)) 
   }
  }

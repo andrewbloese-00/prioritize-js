@@ -1,5 +1,6 @@
 # Requirements To Run
-In order to start this project, node must be installed on your machine. ( it can be found [here](https://nodejs.org/en/). ). Make sure you download the LTS version not Current. 
+In order to start this project, node must be installed on your machine. It can be found [here](https://nodejs.org/en/).
+ * Make sure you download the LTS version NOT the current version. 
 
 # Once Node is installed 
 After your machine has node installed, navigate to the project root directory in a terminal or using gitbash if you are on windows. Then run the command... 

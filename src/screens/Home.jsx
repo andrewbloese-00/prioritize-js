@@ -11,7 +11,7 @@ const Home = () => {
     
    {/*<RotatingCircles/>*/}
    <div className='big__content'>
-    <h1> Prioritize JS</h1>
+    <h1> Prioritize  JS</h1>
     <p>an easy to use, smart to-do list that takes the effort out of planning so you can spend more time doing.</p>
     {
      localStorage.getItem('tasks')
