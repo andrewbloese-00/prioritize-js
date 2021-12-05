@@ -1,0 +1,63 @@
+.task__wrapper
+{
+ font-family: var(--font);
+ margin: 10px auto;
+ width: 90%;
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ color: var(--text);
+ background-color: var(--bckgd_main);
+ padding: 10px 0;
+ border-radius: 5px;
+}
+
+.task__marker 
+{
+ text-align: center;
+ padding: auto;
+ height: 60px;
+ width: 60px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: 1rem;
+ transition: all 0.5s ease-in-out;
+ text-align: center;
+}
+
+.task__marker i
+{
+ display: flex;
+ place-self: center;
+ text-align: center;
+ font-size: 2rem;
+}
+
+
+.task__marker:hover i
+{
+ color: aquamarine;
+}
+
+.task__content
+{
+ flex: 0.9;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+}
+
+.name__desc
+{
+ flex: 1;
+}
+
+
+@media(max-width: 500px)
+{
+ .task__wrapper{
+  width: 99%;
+ }
+
+}
