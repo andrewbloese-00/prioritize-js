@@ -22,5 +22,5 @@ which will start up the development server and open the page in a new browser ta
 ### Some notes
 
 * there is a bug with the edit functionality where it doesn't save the task once done editing, however the page can still be navigated to. 
-* if you have any questions about how to get the project running please do not hesitate to contact me at abloese@asu.edu
+* if you have any questions about how to get the project running please do not hesitate to contact me at dev@andrewbloese.me
 
