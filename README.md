@@ -1,3 +1,7 @@
+## NOTE PROJECT IS BROKEN AFTER REACT UPDATES
+No longer functioning. May revisit this idea again in the future with NextJS
+
+
 # Requirements To Run
 In order to start this project, node must be installed on your machine. It can be found [here](https://nodejs.org/en/).
  * Make sure you download the LTS version NOT the current version. 
